@@ -53,7 +53,7 @@ const Mainpage = (props) => {
             <Form.Control type="text" style={{width:'100%'}} onChange={inputCity}/>
           </FloatingLabel>         
       </Container>
-          <Button variant="contained"  className=' btn m-2' type='submit'><i class="bi bi-search"></i></Button>
+          <Button variant="contained"  className=' btn m-2' type='submit'><i className="bi bi-search"></i></Button>
       
       
       </Container>
@@ -91,7 +91,7 @@ export const Location= (props) => {
   return (
     <div className='location m-3'> 
     <Container className="locationsubcontainer ">
-      <center><h5> <i class="bi bi-geo-alt p-2"></i>Location</h5></center>
+      <center><h5> <i className="bi bi-geo-alt p-2"></i>Location</h5></center>
 <Col>
       <p>City: {LocationData.location.name}</p>
       <p>Region: {LocationData.location.region}</p>
@@ -124,7 +124,7 @@ export const Current = (props) => {
   return (
     <div className='current m-3'>
       <Container className='currentsubcontainer'>
-        <center><h5><i class="bi bi-geo p-2"></i>Current</h5></center>
+        <center><h5><i className="bi bi-geo p-2"></i>Current</h5></center>
       <p>Latitude: {currentempdata.location.lat}</p>
       <p>Longtitude: {currentempdata.location.lon}</p>
       <p>Temp in celcius: {currentempdata.current.temp_c}</p>
@@ -145,7 +145,7 @@ export const Current = (props) => {
   return (
     <div className='airqualitycontainer m-3'>
       <Container>
-      <center><h5><i class="bi bi-cloud-haze2 p-2"></i>Air Quality</h5></center>
+      <center><h5><i className="bi bi-cloud-haze2 p-2"></i>Air Quality</h5></center>
       <p>Carbon dioxide: {airquaityprops.current.air_quality.co}</p>
       <p>Nitrogen dioxide: {airquaityprops.current.air_quality.no2}</p>
       <p>Ozone:  {airquaityprops.current.air_quality.o3}</p>
@@ -178,7 +178,7 @@ export const Wind = (props) => {
   return (
     <div className='winddatacontainer m-3'>
       <Container>
-      <center><h5><i class="bi-wind p-2"></i>Wind</h5></center>
+      <center><h5><i className="bi-wind p-2"></i>Wind</h5></center>
       <p>Wind in mph: {winddata.current.wind_mph}</p>
       <p>Wind in kph:{winddata.current.wind_kph}</p>
       <p>Wind degree:{winddata.current.wind_degree}</p>
