@@ -5,7 +5,7 @@ import Mainpage, { Footer } from './pages/mainpage';
 import {Navbar } from 'react-bootstrap';
 import { ThreeCircles } from 'react-loader-spinner'
 
-const API_KEYS = import.meta.env.VITE_API_KEY;
+const API_KEYS = import.meta.env.VITE_WAPI_EKEYR;
 
 function App() {
   const [firstData, setFirstData] = useState({});

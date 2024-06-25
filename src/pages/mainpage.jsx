@@ -10,7 +10,7 @@ import TextField from '@mui/material/TextField';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 
-const API_KEY = import.meta.env.VITE_API_KEY;
+const API_KEYE = import.meta.env.VITE_WAPI_EKEYR;
 
 const Mainpage = (props) => {
   
@@ -24,7 +24,7 @@ const Mainpage = (props) => {
   const searchCity = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${cityname}&aqi=yes`);
+      const response = await axios.get(`http://api.weatherapi.com/v1/current.json?key=${API_KEYE}&q=${cityname}&aqi=yes`);
       setResData(response.data);
      // console.log("hello from ainpage",response.data);
     } catch (e){
