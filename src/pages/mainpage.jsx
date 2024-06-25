@@ -1,14 +1,11 @@
 import React, { useState, useEffect,useContext } from 'react';
 import {Container, Form,Row,Col, FloatingLabel, Navbar } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import axios from 'axios';
-import Grid from '@mui/material/Grid';
+
 import Button from '@mui/material/Button';
 import '../../src/pages/mainStyle.css'
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import Paper from '@mui/material/Paper';
-import { styled } from '@mui/material/styles';
+
 
 const API_KEYE = import.meta.env.VITE_WAPI_EKEYR;
 
