@@ -1,26 +1,24 @@
 {
     "headers": [
       {
-        "source": "/Weather-App/assets/:path*",
+       "source": "/Weather-App/assets/:path*",
         "headers": [
           {
             "key": "Content-Type",
-            "value": "application/javascript",
-            "condition": "filename.endsWith('.js')"
-          },
+            "value": "application/javascript"
+          }
+        ]
+      },
+      {
+        "source": "/Weather-App/assets/(.*).css",
+        "headers": [
           {
             "key": "Content-Type",
-            "value": "text/css",
-            "condition": "filename.endsWith('.css')"
+            "value": "text/css"
           }
         ]
       }
-    ],
-    "routes": [
-      {
-        "src": "/Weather-App/(.*)",
-        "dest": "/Weather-App/$1"
-      }
+      
     ]
   }
   
