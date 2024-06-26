@@ -1,7 +1,7 @@
 {
     "headers": [
       {
-        "source": "/Weather-App/assets/(.*).js",
+       "source": "/Weather-App/assets/:path*",
         "headers": [
           {
             "key": "Content-Type",
